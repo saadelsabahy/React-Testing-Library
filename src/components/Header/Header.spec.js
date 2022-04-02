@@ -12,6 +12,11 @@ it('render header correctly', () => {
 // 	const headingElm = screen.getByRole('heading');
 // 	expect(headingElm).toBeInTheDocument();
 // });
+it('render header correctly with getByRole', () => {
+	render(<Header title='MY header' />);
+	const headingElm = screen.getByRole('heading', { name: /my header/i });
+	expect(headingElm).toBeInTheDocument();
+});
 it('render header correctly with getAllByRole', () => {
 	render(<Header title='MY header' />);
 	const headingElm = screen.getAllByRole('heading');
