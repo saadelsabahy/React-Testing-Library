@@ -2,7 +2,7 @@ import { fireEvent, screen } from '@testing-library/react';
 import { renderWithRouter } from '../../test-utils';
 import FollowersList from './FollowersList';
 
-describe('todo footer', () => {
+describe('followers', () => {
 	beforeEach(() => {
 		renderWithRouter(<FollowersList />);
 	});
